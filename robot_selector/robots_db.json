@@ -1,0 +1,466 @@
+[
+  {
+    "manufacturer": "doosan",
+    "model": "h2017",
+    "payload_kg": 20.0,
+    "reach_m": 1.7,
+    "repeatability_mm": 0.05,
+    "dof": 6
+  },
+  {
+    "manufacturer": "universal",
+    "model": "ur10e",
+    "payload_kg": 12.5,
+    "reach_m": 1.3,
+    "repeatability_mm": 0.1,
+    "dof": 6
+  },
+  {
+    "manufacturer": "yaskawa",
+    "model": "hc20",
+    "payload_kg": 20.0,
+    "reach_m": 1.7,
+    "repeatability_mm": 0.05,
+    "dof": 6
+  },
+  {
+    "manufacturer": "fanuc",
+    "model": "m20ia",
+    "payload_kg": 20.0,
+    "reach_m": 1.81,
+    "repeatability_mm": 0.08,
+    "dof": 6
+  },
+  {
+    "manufacturer": "abb",
+    "model": "irb1600",
+    "payload_kg": 10.0,
+    "reach_m": 1.45,
+    "repeatability_mm": 0.05,
+    "dof": 6
+  },
+  {
+    "manufacturer": "kuka",
+    "model": "kr10_r1100",
+    "payload_kg": 10.0,
+    "reach_m": 1.1,
+    "repeatability_mm": 0.03,
+    "dof": 6
+  },
+  {
+"manufacturer": "doosan",
+"model": "a0509",
+"payload_kg": 5.0,
+"reach_m": 0.9,
+"repeatability_mm": 0.05,
+"dof": 6
+  },
+  {
+"manufacturer": "doosan",
+"model": "m1509",
+"payload_kg": 15.0,
+"reach_m": 0.9,
+"repeatability_mm": 0.03,
+"dof": 6
+  },
+  {
+"manufacturer": "doosan",
+"model": "h2515",
+"payload_kg": 25.0,
+"reach_m": 1.5,
+"repeatability_mm": 0.1,
+"dof": 6
+  },
+  {
+"manufacturer": "doosan",
+"model": "p3020",
+"payload_kg": 30.0,
+"reach_m": 2.03,
+"repeatability_mm": 0.1,
+"dof": 6
+  },
+  {
+"manufacturer": "doosan",
+"model": "a0912",
+"payload_kg": 9.0,
+"reach_m": 1.2,
+"repeatability_mm": 0.05,
+"dof": 6
+  },
+  {
+"manufacturer": "universal",
+"model": "ur3e",
+"payload_kg": 3.0,
+"reach_m": 0.5,
+"repeatability_mm": 0.03,
+"dof": 6
+  },
+  {
+"manufacturer": "universal",
+"model": "ur5e",
+"payload_kg": 5.0,
+"reach_m": 0.85,
+"repeatability_mm": 0.03,
+"dof": 6
+},
+{
+"manufacturer": "universal",
+"model": "ur16e",
+"payload_kg": 16.0,
+"reach_m": 0.9,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "universal",
+"model": "ur20",
+"payload_kg": 20.0,
+"reach_m": 1.75,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "universal",
+"model": "ur15",
+"payload_kg": 17.5,
+"reach_m": 1.3,
+"repeatability_mm": 0.04,
+"dof": 6
+},
+{
+"manufacturer": "yaskawa",
+"model": "hc30pl",
+"payload_kg": 30.0,
+"reach_m": 1.7,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "yaskawa",
+"model": "hc10dt",
+"payload_kg": 10.0,
+"reach_m": 1.379,
+"repeatability_mm": 0.1,
+"dof": 6
+},
+{
+"manufacturer": "yaskawa",
+"model": "hc20xp",
+"payload_kg": 20.0,
+"reach_m": 1.7,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "fanuc",
+"model": "cr35ia",
+"payload_kg": 35.0,
+"reach_m": 1.813,
+"repeatability_mm": 0.08,
+"dof": 6
+},
+{
+"manufacturer": "fanuc",
+"model": "m10id",
+"payload_kg": 12.0,
+"reach_m": 1.44,
+"repeatability_mm": 0.02,
+"dof": 6
+},
+{
+"manufacturer": "fanuc",
+"model": "m710ic",
+"payload_kg": 50.0,
+"reach_m": 2.05,
+"repeatability_mm": 0.07,
+"dof": 6
+},
+{
+"manufacturer": "abb",
+"model": "irb4600",
+"payload_kg": 60.0,
+"reach_m": 2.55,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "abb",
+"model": "irb2600",
+"payload_kg": 20.0,
+"reach_m": 1.65,
+"repeatability_mm": 0.04,
+"dof": 6
+},
+{
+"manufacturer": "abb",
+"model": "irb2400",
+"payload_kg": 20.0,
+"reach_m": 1.55,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "abb",
+"model": "irb140",
+"payload_kg": 6.0,
+"reach_m": 0.81,
+"repeatability_mm": 0.03,
+"dof": 6
+},
+{
+"manufacturer": "abb",
+"model": "irb120",
+"payload_kg": 3.0,
+"reach_m": 0.58,
+"repeatability_mm": 0.01,
+"dof": 6
+},
+{
+"manufacturer": "kuka",
+"model": "kr6_arc",
+"payload_kg": 6.0,
+"reach_m": 1.911,
+"repeatability_mm": 0.1,
+"dof": 6
+},
+{
+"manufacturer": "kuka",
+"model": "kr_agilus",
+"payload_kg": 6.0,
+"reach_m": 0.706,
+"repeatability_mm": 0.03,
+"dof": 6
+},
+{
+"manufacturer": "kuka",
+"model": "lbr_iisy",
+"payload_kg": 3.0,
+"reach_m": 0.76,
+"repeatability_mm": 0.1,
+"dof": 6
+},
+{
+"manufacturer": "techman",
+"model": "tm5",
+"payload_kg": 5.0,
+"reach_m": 0.9,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "techman",
+"model": "tm12",
+"payload_kg": 12.0,
+"reach_m": 1.3,
+"repeatability_mm": 0.1,
+"dof": 6
+},
+{
+"manufacturer": "techman",
+"model": "tm14",
+"payload_kg": 14.0,
+"reach_m": 1.1,
+"repeatability_mm": 0.1,
+"dof": 6
+},
+{
+"manufacturer": "techman",
+"model": "tm20",
+"payload_kg": 20.0,
+"reach_m": 1.3,
+"repeatability_mm": 0.1,
+"dof": 6
+},
+{
+"manufacturer": "staubli",
+"model": "tx2_60",
+"payload_kg": 4.5,
+"reach_m": 0.67,
+"repeatability_mm": 0.02,
+"dof": 6
+},
+{
+"manufacturer": "staubli",
+"model": "tx2_90",
+"payload_kg": 9.0,
+"reach_m": 1.0,
+"repeatability_mm": 0.03,
+"dof": 6
+},
+{
+"manufacturer": "staubli",
+"model": "rx160",
+"payload_kg": 20.0,
+"reach_m": 1.6,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "staubli",
+"model": "tx2_160",
+"payload_kg": 40.0,
+"reach_m": 1.71,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "techman",
+"model": "tm5-700",
+"payload_kg": 4.0,
+"reach_m": 0.7,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "techman",
+"model": "tm5-900",
+"payload_kg": 6.0,
+"reach_m": 0.9,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "techman",
+"model": "tm16",
+"payload_kg": 16.0,
+"reach_m": 0.9,
+"repeatability_mm": 0.1,
+"dof": 6
+},
+{
+"manufacturer": "aubo",
+"model": "i3",
+"payload_kg": 3.0,
+"reach_m": 0.625,
+"repeatability_mm": 0.02,
+"dof": 6
+},
+{
+"manufacturer": "aubo",
+"model": "i5",
+"payload_kg": 5.0,
+"reach_m": 0.8865,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "aubo",
+"model": "i10",
+"payload_kg": 10.0,
+"reach_m": 1.35,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "aubo",
+"model": "i16",
+"payload_kg": 16.0,
+"reach_m": 0.9675,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "hansrobot",
+"model": "elfin-e3",
+"payload_kg": 3.0,
+"reach_m": 0.59,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "hansrobot",
+"model": "elfin-e5",
+"payload_kg": 5.0,
+"reach_m": 0.8,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "hansrobot",
+"model": "elfin-e10",
+"payload_kg": 10.0,
+"reach_m": 1.0,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "hansrobot",
+"model": "elfin-e15",
+"payload_kg": 15.0,
+"reach_m": 0.95,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "kawasaki",
+"model": "cl103n",
+"payload_kg": 3.0,
+"reach_m": 0.59,
+"repeatability_mm": 0.02,
+"dof": 6
+},
+{
+"manufacturer": "kawasaki",
+"model": "cl105n",
+"payload_kg": 5.0,
+"reach_m": 0.8,
+"repeatability_mm": 0.02,
+"dof": 6
+},
+{
+"manufacturer": "kawasaki",
+"model": "cl108n",
+"payload_kg": 8.0,
+"reach_m": 1.3,
+"repeatability_mm": 0.02,
+"dof": 6
+},
+{
+"manufacturer": "kawasaki",
+"model": "cl110n",
+"payload_kg": 10.0,
+"reach_m": 1.0,
+"repeatability_mm": 0.02,
+"dof": 6
+},
+{
+"manufacturer": "mitsubishi",
+"model": "rv-5as",
+"payload_kg": 5.0,
+"reach_m": 0.91,
+"repeatability_mm": 0.02,
+"dof": 6
+},
+{
+"manufacturer": "mitsubishi",
+"model": "rv-4fr",
+"payload_kg": 4.0,
+"reach_m": 0.649,
+"repeatability_mm": 0.02,
+"dof": 6
+},
+{
+"manufacturer": "mitsubishi",
+"model": "rv-8crl",
+"payload_kg": 8.0,
+"reach_m": 0.931,
+"repeatability_mm": 0.02,
+"dof": 6
+},
+{
+"manufacturer": "mitsubishi",
+"model": "rv-12crl",
+"payload_kg": 12.0,
+"reach_m": 1.385,
+"repeatability_mm": 0.05,
+"dof": 6
+},
+{
+"manufacturer": "standardbots",
+"model": "ro1",
+"payload_kg": 18.0,
+"reach_m": 1.3,
+"repeatability_mm": 0.05,
+"dof": 6
+}
+]

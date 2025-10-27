@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# Doosan Robot Job File
+# Auto-generated from TDL
+
+# Doosan DRL Script
+# Generated from TDL
+
+def Initialize_Process():
+    movej(PosJ(0, v=50, a=50, radius=0)
+    set_digital_output(1, 0)
+
+def Execute_Process():
+    movel(PosX(0, v=100, a=50, radius=0)
+    movel(PosX(0, v=50, a=50, radius=0)
+    set_digital_output(1, 1)
+    wait(0.5)
+    movel(PosX(0, v=50, a=50, radius=0)
+    movel(PosX(100, v=100, a=50, radius=0)
+    movel(PosX(100, v=50, a=50, radius=0)
+    set_digital_output(1, 0)
+    wait(0.5)
+    movel(PosX(100, v=50, a=50, radius=0)
+
+def Finalize_Process():
+    set_digital_output(1, 0)
+    movej(PosJ(0, v=50, a=50, radius=0)
+    return
+
+
+# Main execution
+if __name__ == '__main__':
+    Initialize_Process()
+    Execute_Process()
+    Finalize_Process()

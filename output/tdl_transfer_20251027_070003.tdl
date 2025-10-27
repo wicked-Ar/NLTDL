@@ -1,0 +1,50 @@
+GOAL Initialize_Process()
+{
+    // Move to a safe home joint position
+    SPAWN MoveJoint(target_pose=PosJ(0, 0, 90, 0, 90, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+    // Ensure gripper is open at the start
+    SPAWN SetDigitalOutput(port=1, value=0) WITH WAIT;
+}
+
+GOAL Execute_Process()
+{
+    // Task: Transfer a box from A to B
+    // A: PosX(0, 0, 0, 0, 0, 0)
+    // B: PosX(100, 105, 150, 0, 0, 0)
+
+    // 1. Approach source A (safe height: A's Z + 100mm)
+    SPAWN MoveLinear(target_pose=PosX(0, 0, 100, 0, 0, 0), velocity=100, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+
+    // 2. Descend to grasp height at A (A's Z + 10mm)
+    SPAWN MoveLinear(target_pose=PosX(0, 0, 10, 0, 0, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+
+    // 3. Grasp the box (close gripper)
+    SPAWN SetDigitalOutput(port=1, value=1) WITH WAIT; // Close gripper
+    SPAWN Delay(duration_sec=0.5) WITH WAIT; // Wait for gripper to close
+
+    // 4. Lift the box from source A (back to safe height above A)
+    SPAWN MoveLinear(target_pose=PosX(0, 0, 100, 0, 0, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+
+    // 5. Move to target B (above safe height: B's Z + 100mm)
+    SPAWN MoveLinear(target_pose=PosX(100, 105, 250, 0, 0, 0), velocity=100, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+
+    // 6. Lower the box to place height at B (B's Z + 10mm)
+    SPAWN MoveLinear(target_pose=PosX(100, 105, 160, 0, 0, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+
+    // 7. Release the box (open gripper)
+    SPAWN SetDigitalOutput(port=1, value=0) WITH WAIT; // Open gripper
+    SPAWN Delay(duration_sec=0.5) WITH WAIT; // Wait for gripper to open
+
+    // 8. Retract to safe height above B
+    SPAWN MoveLinear(target_pose=PosX(100, 105, 250, 0, 0, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+}
+
+GOAL Finalize_Process()
+{
+    // Ensure gripper is open before ending
+    SPAWN SetDigitalOutput(port=1, value=0) WITH WAIT;
+    // Move to a safe home joint position
+    SPAWN MoveJoint(target_pose=PosJ(0, 0, 90, 0, 90, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+    // End the program
+    SPAWN End() WITH WAIT;
+}

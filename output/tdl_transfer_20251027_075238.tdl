@@ -1,0 +1,55 @@
+HEADER
+  TASK_NAME: "박스 옮기기"
+  DESCRIPTION: "박스를 A 위치에서 B 위치로 옮기는 작업입니다."
+  OBJECT: "box"
+  PAYLOAD_KG: 15.0
+END_HEADER
+
+GOAL Initialize_Process()
+{
+    // 로봇을 초기 안전 위치로 이동하고 그리퍼를 엽니다.
+    SPAWN MoveJoint(target_pose=PosJ(0, 0, 90, 0, 90, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+    SPAWN SetDigitalOutput(port=1, value=0) WITH WAIT;  // 그리퍼 열기
+}
+
+GOAL Execute_Process()
+{
+    // 박스를 A 위치에서 B 위치로 옮기는 시퀀스입니다.
+
+    // A 위치: PosX(0, 0, 0, 0, 0, 0)
+    // B 위치: PosX(100, 105, 150, 0, 0, 0)
+
+    // 1. A 위치 위 안전 높이로 접근 (+150mm)
+    SPAWN MoveLinear(target_pose=PosX(0, 0, 150, 0, 0, 0), velocity=100, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+
+    // 2. A 위치의 잡기 높이로 하강 (+10mm)
+    SPAWN MoveLinear(target_pose=PosX(0, 0, 10, 0, 0, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+
+    // 3. 잡기 (그리퍼 닫기)
+    SPAWN SetDigitalOutput(port=1, value=1) WITH WAIT;
+    SPAWN Delay(duration_sec=0.5) WITH WAIT;
+
+    // 4. A 위치에서 안전 높이로 들어 올리기
+    SPAWN MoveLinear(target_pose=PosX(0, 0, 150, 0, 0, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+
+    // 5. B 위치 위 안전 높이로 이동 (+150mm)
+    SPAWN MoveLinear(target_pose=PosX(100, 105, 300, 0, 0, 0), velocity=100, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+
+    // 6. B 위치의 놓기 높이로 하강 (+10mm)
+    SPAWN MoveLinear(target_pose=PosX(100, 105, 160, 0, 0, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+
+    // 7. 놓기 (그리퍼 열기)
+    SPAWN SetDigitalOutput(port=1, value=0) WITH WAIT;
+    SPAWN Delay(duration_sec=0.5) WITH WAIT;
+
+    // 8. B 위치에서 안전 높이로 후퇴
+    SPAWN MoveLinear(target_pose=PosX(100, 105, 300, 0, 0, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+}
+
+GOAL Finalize_Process()
+{
+    // 작업 완료 후 그리퍼가 열려 있는지 확인하고 로봇을 초기 안전 위치로 이동합니다.
+    SPAWN SetDigitalOutput(port=1, value=0) WITH WAIT;  // 그리퍼가 열려 있는지 확인
+    SPAWN MoveJoint(target_pose=PosJ(0, 0, 90, 0, 90, 0), velocity=50, acceleration=50, tool=0, blending_radius=0) WITH WAIT;
+    SPAWN End() WITH WAIT;
+}

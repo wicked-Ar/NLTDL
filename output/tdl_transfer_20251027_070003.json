@@ -1,0 +1,33 @@
+{
+  "actions": [
+    "transfer"
+  ],
+  "objects": [
+    "box"
+  ],
+  "locations": [
+    "A",
+    "B"
+  ],
+  "constraints": [],
+  "coordinates": {
+    "A": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "B": [
+      100,
+      105,
+      150,
+      0,
+      0,
+      0
+    ]
+  },
+  "task_description": "박스를 A에서 B로 옮기는 작업입니다.",
+  "raw_input": "박스를 A(0,0,0,0,0,0)에서 B(100,105,150,0,0,0)로 옮겨줘"
+}
